@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
+class MyText extends StatelessWidget {
+  const MyText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,17 +23,32 @@ class MyAppBar extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            const SizedBox(height: 16,),
+
             const Text("Bui Anh Quoc"),
             const Text("23010328"),
             const Text("Phenikaa University"),
-            const Text("Information Technology")
+            const Text("Information Technology"),
+
+            const SizedBox(height: 16,),
+
+            const Text(
+              "Hello guys",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+                letterSpacing: 5
+              ),
+            ),
           ],
         ),
       ),
 
       floatingActionButton: FloatingActionButton(
-          onPressed: (){},
-          child: const Icon(Icons.add),
+        onPressed: (){},
+        child: const Icon(Icons.add),
       ),
 
       bottomNavigationBar: BottomNavigationBar(

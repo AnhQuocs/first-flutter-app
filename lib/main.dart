@@ -1,6 +1,6 @@
+import 'package:first_flutter_app/MyContainer.dart';
+import 'package:first_flutter_app/MyText.dart';
 import 'package:flutter/material.dart';
-
-import 'MyAppBar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyAppBar(),
+      home: const MyContainer(),
     );
   }
 }
