@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyContainer extends StatelessWidget {
-  const MyContainer({super.key});
+class MyColumnAndRow extends StatelessWidget {
+  const MyColumnAndRow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,36 +15,29 @@ class MyContainer extends StatelessWidget {
 
       backgroundColor: Color(0xFFEEEEEE),
 
-      body: Center(
-        child: Container(
-          width: 200,
-          height: 300,
-          decoration: BoxDecoration(
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(16),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.5),
-                  spreadRadius: 1,
-                  blurRadius: 7,
-                  offset: const Offset(0, 3)
-                ),
-              ]
-          ),
-          padding: const EdgeInsets.all(20),
-          margin: const EdgeInsets.all(10),
-          child: Align(
-            alignment: Alignment.center,
-            child: const Text(
-              "This is box",
-              style: TextStyle(
-                  color: Colors.yellow,
-                  fontSize: 20
-              ),
-            ),
-          ),
-        ),
-      ),
+      // body: Center(
+      //   child: Column(
+      //     children: [
+      //       Row(
+      //         children: [
+      //           const SizedBox(height: 50,),
+      //           const Icon(Icons.alarm),
+      //           const Icon(Icons.ac_unit_outlined),
+      //           const Icon(Icons.person),
+      //         ],
+      //       ),
+      //       Row(
+      //         children: [
+      //           Text("Text 1............"),
+      //           Text("Text 1............"),
+      //           Text("Text 1............"),
+      //         ],
+      //       )
+      //     ],
+      //   ),
+      // ),
+
+
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
