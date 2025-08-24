@@ -1,4 +1,7 @@
+import 'package:first_flutter_app/HandleTextField.dart';
 import 'package:first_flutter_app/MyContainer.dart';
+import 'package:first_flutter_app/MyScaffold.dart';
+import 'package:first_flutter_app/MyTextField.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyContainer(),
+      home: HandleTextField(),
     );
   }
 }
