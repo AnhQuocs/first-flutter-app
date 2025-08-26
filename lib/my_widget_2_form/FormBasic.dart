@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FormBasicDemo extends StatefulWidget {
+  const FormBasicDemo({super.key});
+
   @override
   State<StatefulWidget> createState() => _FormBasicDemoState();
 }
