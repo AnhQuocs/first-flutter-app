@@ -39,6 +39,7 @@ class User {
     );
   }
 
+  // Bản sao
   User copyWith({
     int? id,
     String? name,
@@ -55,5 +56,10 @@ class User {
       avatar: avatar ?? this.avatar,
       dateOfBirth: dateOfBirth ?? this.dateOfBirth
     );
+  }
+
+  @override
+  String toString() {
+    return 'User(id: $id, name: $name phone: $phone, email: $email, avatar: $avatar, dateOfBirth: $dateOfBirth)';
   }
 }
